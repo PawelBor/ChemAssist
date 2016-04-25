@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="ChemistryAssistant.Chemical_Pages.ReactionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChemistryAssistant.Chemical_Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="WhiteSmoke">
+        <Grid.ColumnDefinitions>
+            <!--<ColumnDefinition Width="20*" />-->
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollMode="Auto" >
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <ListView x:ConnectionId='1' x:Name="Reactions">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+
+                            <TextBlock Margin="0,20,0,0" 
+                                       ScrollViewer.HorizontalScrollBarVisibility="Visible" 
+                                       ScrollViewer.HorizontalScrollMode="Enabled" 
+                                       FontSize="20" 
+                                       Text="{Binding reactionDesc}"/>
+                            <!--<TextBlock Margin="0,-32,0,0" FontSize="25" Text="{Binding idtodo}"/>-->
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<TextBox x:Name="NewTodoTxtBox" FontSize="25" Header="New Todo:"/>
+            <Button x:Name="InsertTodoBtn" Click="InsertTodoBtn_Click" Content="Insert New Todo" Margin="150,20,0,0"/>-->
+
+            
+        </StackPanel>
+        </ScrollViewer>
+
+
+        <!--StackPanel ID display--><!--
+        <StackPanel Grid.Column="0" Orientation="Vertical">
+            <ListView x:Name="ReactionsID">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+
+                            <TextBlock  Margin="0,20,0,0" 
+                                       ScrollViewer.HorizontalScrollBarVisibility="Visible" 
+                                       ScrollViewer.HorizontalScrollMode="Enabled" 
+                                       FontSize="25" 
+                                       Text="{Binding idDesc}"/>
+                            --><!--<TextBlock Margin="0,-32,0,0" FontSize="25" Text="{Binding idtodo}"/>--><!--
+
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            --><!--<TextBox x:Name="NewTodoTxtBox" FontSize="25" Header="New Todo:"/>
+            <Button x:Name="InsertTodoBtn" Click="InsertTodoBtn_Click" Content="Insert New Todo" Margin="150,20,0,0"/>--><!--
+
+
+        </StackPanel>-->
+
+
+
+    </Grid>
+    
+</Page>
+

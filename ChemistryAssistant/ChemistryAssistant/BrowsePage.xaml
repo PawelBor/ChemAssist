@@ -1,0 +1,297 @@
+﻿<Page
+    x:Class="ChemistryAssistant.BrowsePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChemistryAssistant"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="WhiteSmoke">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="PhoneTablet">
+                <VisualState x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="WideScreen">
+                    <VisualState.Setters>
+                        <Setter Target="stackPanel.(Panel.Background)">
+                            <Setter.Value>
+                                <SolidColorBrush Color="WhiteSmoke"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
+        <!--<StackPanel x:Name="stackPanel" Orientation="Vertical">
+            <ListView x:Name="listView" HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="100" >
+                <ListViewItem BorderBrush="Green" BorderThickness="5" Background="Aqua" Content="hi" Tapped="ListViewItem_Tapped_Carbon"/>
+            </ListView>
+    </StackPanel>-->
+        <!--<Button x:Name="btnHydrogen" Content="1H" BorderBrush="Black" 
+                BorderThickness="1" Foreground="Red" Background="Gray" 
+                Grid.Column="0" HorizontalAlignment="Right"  Grid.Row="0" 
+                VerticalAlignment="Stretch" Tapped="btnCarbon_Tapped"/>
+        <Button x:Name="btnCarbon" Content="6C" BorderBrush="Black" 
+                BorderThickness="1" Foreground="Wheat" Background="Green" 
+                Grid.Column="13" HorizontalAlignment="Right"  Grid.Row="1" 
+                VerticalAlignment="Stretch" Tapped="btnCarbon_Tapped"/>
+
+        <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+                
+        </Grid.RowDefinitions>
+
+        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>-->
+
+        
+
+        <Pivot x:Name="rootPivot" Title="Periodic Elements">
+            
+            <PivotItem Header="Alkali Metal |">
+                <Grid ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollMode="Enabled" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100*"/>
+
+                    </Grid.ColumnDefinitions>
+                    <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                        <ListViewItem x:Name="lsvLithium" Width="Auto" Background="#FF6666" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(3)   Lithium" HorizontalAlignment="Stretch" Tapped="lsvLithium_Tapped"/>
+                        <ListViewItem x:Name="lsvSodium" Width="Auto" Background="#FF6666" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(11)  Sodium" HorizontalAlignment="Stretch" Tapped="lsvSodium_Tapped" />
+                        <ListViewItem x:Name="lsvPotassium" Width="Auto" Background="#FF6666" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(19)  Potassium" HorizontalAlignment="Stretch" Tapped="lsvPotassium_Tapped" />
+                        <ListViewItem x:Name="lsvRubidium" Width="Auto" Background="#FF6666" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(37)  Rubidium" HorizontalAlignment="Stretch" Tapped="lsvRubidium_Tapped" />
+                        <ListViewItem x:Name="lsvCaesium" Width="Auto" Background="#FF6666" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(55)  Caesium" HorizontalAlignment="Stretch" Tapped="lsvCaesium_Tapped" />
+                        <ListViewItem x:Name="lsvFrancium" Width="Auto" Background="#FF6666" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(87)  Francium" HorizontalAlignment="Stretch" Tapped="lsvFrancium_Tapped" />
+                    </ListView>
+                </Grid>
+            </PivotItem>
+            
+            <PivotItem Header="Alkaline Earth Metal |">
+                <!-- #FFDEAD-->
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvBerylium" Width="Auto" Background="#FFDEAD" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(4)  Berylium" HorizontalAlignment="Stretch" Tapped="lsvBerylium_Tapped" />
+                    <ListViewItem  x:Name="lsvMegnesium" Width="Auto" Background="#FFDEAD" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(12)  Megnesium" HorizontalAlignment="Stretch" Tapped="lsvMegnesium_Tapped" />
+                    <ListViewItem  x:Name="lsvCalcium" Width="Auto" Background="#FFDEAD" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(20)  Calcium" HorizontalAlignment="Stretch" Tapped="lsvCalcium_Tapped" />
+                    <ListViewItem  x:Name="lsvStrontium" Width="Auto" Background="#FFDEAD" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(38)  Strontium" HorizontalAlignment="Stretch" Tapped="lsvStrontium_Tapped" />
+                    <ListViewItem  x:Name="lsvBarium" Width="Auto" Background="#FFDEAD" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(56)  Barium" HorizontalAlignment="Stretch" Tapped="lsvBarium_Tapped" />
+                    <ListViewItem  x:Name="lsvRadium" Width="Auto" Background="#FFDEAD" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(88)  Radium" HorizontalAlignment="Stretch" Tapped="lsvRadium_Tapped" />
+                </ListView>
+            </PivotItem>
+            
+            <PivotItem Header="Lanthanide |">
+                <!-- #FFBFFF-->
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvLanthanum" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(57)  Lanthanum" HorizontalAlignment="Stretch" Tapped="lsvLanthanum_Tapped" />
+                    <ListViewItem  x:Name="lsvCerium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(58)  Cerium" HorizontalAlignment="Stretch" Tapped="lsvCerium_Tapped" />
+                    <ListViewItem  x:Name="lsvPraseodymium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(59)  Praseo­dymium" HorizontalAlignment="Stretch" Tapped="lsvPraseodymium_Tapped" />
+                    <ListViewItem  x:Name="lsvNeodymium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(60)  Neodymium" HorizontalAlignment="Stretch" Tapped="lsvNeodymium_Tapped" />
+                    <ListViewItem  x:Name="lsvPromethium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(61)  Prome­thium" HorizontalAlignment="Stretch" Tapped="lsvPromethium_Tapped" />
+                    <ListViewItem  x:Name="lsvSamarium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(62)  Samarium" HorizontalAlignment="Stretch" Tapped="lsvSamarium_Tapped" />
+                    <ListViewItem  x:Name="lsvEuropium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(63)  Europium" HorizontalAlignment="Stretch" Tapped="lsvEuropium_Tapped" />
+                    <ListViewItem  x:Name="lsvGadolinium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(64)  Gadolinium" HorizontalAlignment="Stretch" Tapped="lsvGadolinium_Tapped" />
+                    <ListViewItem  x:Name="lsvTerbium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(65)  Ter­bium" HorizontalAlignment="Stretch" Tapped="lsvTerbium_Tapped" />
+                    <ListViewItem  x:Name="lsvDysprosium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(66)  Dysprosium" HorizontalAlignment="Stretch" Tapped="lsvDysprosium_Tapped" />
+                    <ListViewItem  x:Name="lsvHolmium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(67)  Hol­mium" HorizontalAlignment="Stretch" Tapped="lsvHolmium_Tapped" />
+                    <ListViewItem  x:Name="lsvErbium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(68)  Erbium" HorizontalAlignment="Stretch" Tapped="lsvErbium_Tapped" />
+                    <ListViewItem  x:Name="lsvThulium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(69)  Thulium" HorizontalAlignment="Stretch" Tapped="lsvThulium_Tapped"/>
+                    <ListViewItem  x:Name="lsvYtterbium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(70)  Ytter­bium" HorizontalAlignment="Stretch" Tapped="lsvYtterbium_Tapped" />
+                    <!--<ListViewItem  x:Name="lsvLutetium" Width="Auto" Background="#FFBFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(71)  Lutetium" HorizontalAlignment="Stretch" />-->
+                </ListView>
+                
+            </PivotItem>
+
+            <PivotItem Header="Actinide |">
+                <!-- #FF99CC-->
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvLutetium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(71)  Lutetium" HorizontalAlignment="Stretch" Tapped="lsvLutetium_Tapped" />
+                    <ListViewItem  x:Name="lsvActinium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(89)  Actinium" HorizontalAlignment="Stretch" Tapped="lsvActinium_Tapped" />
+                    <ListViewItem  x:Name="lsvThorium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(90)  Thor­ium" HorizontalAlignment="Stretch" Tapped="lsvThorium_Tapped" />
+                    <ListViewItem  x:Name="lsvProtactinium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(91)  Protactinium" HorizontalAlignment="Stretch" Tapped="lsvProtactinium_Tapped" />
+                    <ListViewItem  x:Name="lsvUranium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(92)  Ura­nium" HorizontalAlignment="Stretch" Tapped="lsvUranium_Tapped" />
+                    <ListViewItem  x:Name="lsvNeptunium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(93)  Neptunium" HorizontalAlignment="Stretch" Tapped="lsvNeptunium_Tapped" />
+                    <ListViewItem  x:Name="lsvPlutonium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(94)  Pluto­nium" HorizontalAlignment="Stretch" Tapped="lsvPlutonium_Tapped" />
+                    <ListViewItem  x:Name="lsvAmericium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(95)  Americium" HorizontalAlignment="Stretch" Tapped="lsvAmericium_Tapped" />
+                    <ListViewItem  x:Name="lsvCurium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(96)  Curium" HorizontalAlignment="Stretch" Tapped="lsvCurium_Tapped" />
+                    <ListViewItem  x:Name="lsvBerkelium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(97)  Berkelium" HorizontalAlignment="Stretch" Tapped="lsvBerkelium_Tapped" />
+                    <ListViewItem  x:Name="lsvCalifornium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(98)  Califor­nium" HorizontalAlignment="Stretch" Tapped="lsvCalifornium_Tapped" />
+                    <ListViewItem  x:Name="lsvEinsteinium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(99)  Einsteinium" HorizontalAlignment="Stretch" Tapped="lsvEinsteinium_Tapped" />
+                    <ListViewItem  x:Name="lsvFermium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(100)  Fer­mium" HorizontalAlignment="Stretch" Tapped="lsvFermium_Tapped"/>
+                    <ListViewItem  x:Name="lsvMendelevium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(101)  Mende­levium" HorizontalAlignment="Stretch" Tapped="lsvMendelevium_Tapped" />
+                    <ListViewItem  x:Name="lsvNobelium" Width="Auto" Background="#FF99CC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(102)  Nobelium" HorizontalAlignment="Stretch" Tapped="lsvNobelium_Tapped" />
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Transition Metal |">
+                <!-- 35-->
+                <!-- #FFC0C0-->
+
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvScandium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(21)  Scandium" HorizontalAlignment="Stretch" Tapped="lsvScandium_Tapped"  />
+                    <ListViewItem  x:Name="lsvTitanium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(22)  Titanium" HorizontalAlignment="Stretch" Tapped="lsvTitanium_Tapped" />
+                    <ListViewItem  x:Name="lsvVanadium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(23)  Vanadium" HorizontalAlignment="Stretch" Tapped="lsvVanadium_Tapped" />
+                    <ListViewItem  x:Name="lsvChromium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(24)  Chromium" HorizontalAlignment="Stretch" Tapped="lsvChromium_Tapped" />
+                    <ListViewItem  x:Name="lsvManganese" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(25)  Manganese" HorizontalAlignment="Stretch" Tapped="lsvManganese_Tapped" />
+                    <ListViewItem  x:Name="lsvIron" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(26)  Iron" HorizontalAlignment="Stretch" Tapped="lsvIron_Tapped" />
+                    <ListViewItem  x:Name="lsvCobalt" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(27)  Cobalt" HorizontalAlignment="Stretch" Tapped="lsvCobalt_Tapped" />
+                    <ListViewItem  x:Name="lsvNickel" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(28)  Nickel" HorizontalAlignment="Stretch" Tapped="lsvNickel_Tapped" />
+                    <ListViewItem  x:Name="lsvCopper" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(29)  Copper" HorizontalAlignment="Stretch" Tapped="lsvCopper_Tapped" />
+                    <ListViewItem  x:Name="lsvZinc" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(30)  Zinc" HorizontalAlignment="Stretch" Tapped="lsvZinc_Tapped" />
+                    <ListViewItem  x:Name="lsvYttrium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(39)  Yttrium" HorizontalAlignment="Stretch" Tapped="lsvYttrium_Tapped" />
+                    <ListViewItem  x:Name="lsvZirconium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(40)  Zirconium" HorizontalAlignment="Stretch" Tapped="lsvZirconium_Tapped" />
+                    <ListViewItem  x:Name="lsvNiobium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(41)  Niobium" HorizontalAlignment="Stretch" Tapped="lsvNiobium_Tapped"/>
+                    <ListViewItem  x:Name="lsvMolybdnum" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(42)  Molybdenum" HorizontalAlignment="Stretch" Tapped="lsvMolybdenum_Tapped" />
+                    <ListViewItem  x:Name="lsvTechnetium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(43)  Technetium" HorizontalAlignment="Stretch" Tapped="lsvTechnetium_Tapped" />
+                    <ListViewItem  x:Name="lsvRuthenium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(44)  Ruthenium" HorizontalAlignment="Stretch" Tapped="lsvRuthenium_Tapped" />
+                    <ListViewItem  x:Name="lsvRhodium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(45)  Rhodium" HorizontalAlignment="Stretch" Tapped="lsvRhodium_Tapped" />
+                    <ListViewItem  x:Name="lsvPalladium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(46)  Palladium" HorizontalAlignment="Stretch" Tapped="lsvPalladium_Tapped" />
+                    <ListViewItem  x:Name="lsvSilver" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(47)  Silver" HorizontalAlignment="Stretch" Tapped="lsvSilver_Tapped" />
+                    <ListViewItem  x:Name="lsvCadmium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(48)  Cadmium" HorizontalAlignment="Stretch" Tapped="lsvCadmium_Tapped" />
+                    <ListViewItem  x:Name="lsvHafnium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(72)  Hafnium" HorizontalAlignment="Stretch" Tapped="lsvHafnium_Tapped" />
+                    <ListViewItem  x:Name="lsvTantalum" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(73)  Tantalum" HorizontalAlignment="Stretch" Tapped="lsvTantalum_Tapped" />
+                    <ListViewItem  x:Name="lsvTungsten" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(74)  Tungsten" HorizontalAlignment="Stretch" Tapped="lsvTungsten_Tapped" />
+                    <ListViewItem  x:Name="lsvRhenium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(75)  Rhenium" HorizontalAlignment="Stretch" Tapped="lsvRhenium_Tapped" />
+                    <ListViewItem  x:Name="lsvOsmium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(76)  Osmium" HorizontalAlignment="Stretch" Tapped="lsvOsmium_Tapped" />
+                    <ListViewItem  x:Name="lsvIridium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(77)  Iridium" HorizontalAlignment="Stretch" Tapped="lsvIridium_Tapped" />
+                    <ListViewItem  x:Name="lsvPlatinum" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(78)  Platinum" HorizontalAlignment="Stretch" Tapped="lsvPlatinum_Tapped" />
+                    <ListViewItem  x:Name="lsvGold" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(79)  Gold" HorizontalAlignment="Stretch" Tapped="lsvGold_Tapped"/>
+                    <ListViewItem  x:Name="lsvMercury" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(80)  Mercury" HorizontalAlignment="Stretch" Tapped="lsvMercury_Tapped" />
+                    <ListViewItem  x:Name="lsvRutherfordium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(104)  Rutherfordium" HorizontalAlignment="Stretch" Tapped="lsvRutherfordium_Tapped" />
+                    <ListViewItem  x:Name="lsvDubnium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(105)  Dubnium" HorizontalAlignment="Stretch" Tapped="lsvDubnium_Tapped" />
+                    <ListViewItem  x:Name="lsvSeaborgium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(106)  Seaborgium" HorizontalAlignment="Stretch" Tapped="lsvSeaborgium_Tapped" />
+                    <ListViewItem  x:Name="lsvBohrium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(107)  Bohrium" HorizontalAlignment="Stretch" Tapped="lsvBohrium_Tapped"/>
+                    <ListViewItem  x:Name="lsvHassium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(108)  Hassium" HorizontalAlignment="Stretch" Tapped="lsvHassium_Tapped" />
+                    <ListViewItem  x:Name="lsvCopernicium" Width="Auto" Background="#FFC0C0" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(112)  Copernicium" HorizontalAlignment="Stretch" Tapped="lsvCopernicium_Tapped" />
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Post-transition Metal |">
+                <!-- #CCCCCC-->
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvAluminium" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(13)  Aluminium" HorizontalAlignment="Stretch" Tapped="lsvAluminium_Tapped" />
+                    <ListViewItem  x:Name="lsvGallium" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(31)  Gallium" HorizontalAlignment="Stretch" Tapped="lsvGallium_Tapped" />
+                    <ListViewItem  x:Name="lsvIndium" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(49)  Indium" HorizontalAlignment="Stretch" Tapped="lsvIndium_Tapped" />
+                    <ListViewItem  x:Name="lsvTin" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(50)  Tin" HorizontalAlignment="Stretch" Tapped="lsvTin_Tapped" />
+                    <ListViewItem  x:Name="lsvThallium" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(81)  Thallium" HorizontalAlignment="Stretch" Tapped="lsvThallium_Tapped" />
+                    <ListViewItem  x:Name="lsvLead" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(82)  Lead" HorizontalAlignment="Stretch" Tapped="lsvLead_Tapped" />
+                    <ListViewItem  x:Name="lsvBismuth" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(83)  Bismuth" HorizontalAlignment="Stretch" Tapped="lsvBismuth_Tapped" />
+                    <ListViewItem  x:Name="lsvPolonium" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(84)  Polonium" HorizontalAlignment="Stretch" Tapped="lsvPolonium_Tapped" />
+                    <ListViewItem  x:Name="lsvFlerovium" Width="Auto" Background="#CCCCCC" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(114)  Flerovium" HorizontalAlignment="Stretch" Tapped="lsvFlerovium_Tapped" />
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Metalloid |">
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvBoron" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(5)  Boron" HorizontalAlignment="Stretch" Tapped="lsvBoron_Tapped" />
+                    <ListViewItem  x:Name="lsvSilicon" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(14)  Silicon" HorizontalAlignment="Stretch" Tapped="lsvSilicon_Tapped" />
+                    <ListViewItem  x:Name="lsvGermanium" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(32)  Germanium" HorizontalAlignment="Stretch" Tapped="lsvGermanium_Tapped" />
+                    <ListViewItem  x:Name="lsvArsenic" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(33)  Arsenic" HorizontalAlignment="Stretch" Tapped="lsvArsenic_Tapped" />
+                    <ListViewItem  x:Name="lsvAntimony" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(51)  Antimony" HorizontalAlignment="Stretch" Tapped="lsvAntimony_Tapped" />
+                    <ListViewItem  x:Name="lsvTellurium" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(52)  Tellurium" HorizontalAlignment="Stretch" Tapped="lsvTellurium_Tapped" />
+                    <ListViewItem  x:Name="lsvAstatine" Width="Auto" Background="#CCCC99" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(85)  Astatine" HorizontalAlignment="Stretch" Tapped="lsvAstatine_Tapped" />
+
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Pollyatomic Non-Metal |">
+                <!-- #A1FFC3-->
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvCarbon" Width="Auto" Background="#A1FFC3" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(6)  Carbon" HorizontalAlignment="Stretch" Tapped="lsvCarbon_Tapped" />
+                    <ListViewItem  x:Name="lsvPhosphorus" Width="Auto" Background="#A1FFC3" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(15)  Phosphorus" HorizontalAlignment="Stretch" Tapped="lsvPhosphorus_Tapped" />
+                    <ListViewItem  x:Name="lsvSulfur" Width="Auto" Background="#A1FFC3" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(16)  Sulfur" HorizontalAlignment="Stretch" Tapped="lsvSulfur_Tapped" />
+                    <ListViewItem  x:Name="lsvSelenium" Width="Auto" Background="#A1FFC3" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(34)  Selenium" HorizontalAlignment="Stretch" Tapped="lsvSelenium_Tapped" />
+                   
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Diatomic Non-Metal |">
+                <!-- #E7FF8F-->
+
+                <ListView HorizontalAlignment="Stretch" Background="Gray" Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvNitrogen" Width="Auto" Background="#E7FF8F" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(7)  Nitrogen" HorizontalAlignment="Stretch" Tapped="lsvNitrogen_Tapped" />
+                    <ListViewItem  x:Name="lsvOxygen" Width="Auto" Background="#E7FF8F" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(8)  Oxygen" HorizontalAlignment="Stretch" Tapped="lsvOxygen_Tapped" />
+                    <ListViewItem  x:Name="lsvFluorine" Width="Auto" Background="#E7FF8F" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(9)  Fluorine" HorizontalAlignment="Stretch" Tapped="lsvFluorine_Tapped" />
+                    <ListViewItem  x:Name="lsvChlorine" Width="Auto" Background="#E7FF8F" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(17)  Chlorine" HorizontalAlignment="Stretch" Tapped="lsvChlorine_Tapped" />
+                    <ListViewItem  x:Name="lsvBromine" Width="Auto" Background="#E7FF8F" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(35)  Bromine" HorizontalAlignment="Stretch" Tapped="lsvBromine_Tapped" />
+                    <ListViewItem  x:Name="lsvIodine" Width="Auto" Background="#E7FF8F" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(53)  Iodine" HorizontalAlignment="Stretch" Tapped="lsvIodine_Tapped" />
+
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Noble Gas |">
+                <!-- #C0FFFF-->
+
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvHelium" Width="Auto" Background="#C0FFFF" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(2)  Helium" HorizontalAlignment="Stretch" Tapped="lsvHelium_Tapped" />
+                    <ListViewItem  x:Name="lsvNeon" Width="Auto" Background="#C0FFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(10)  Neon" HorizontalAlignment="Stretch" Tapped="lsvNeon_Tapped" />
+                    <ListViewItem  x:Name="lsvArgon" Width="Auto" Background="#C0FFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(18)  Argon" HorizontalAlignment="Stretch" Tapped="lsvArgon_Tapped" />
+                    <ListViewItem  x:Name="lsvKrypton" Width="Auto" Background="#C0FFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(36)  Krypton" HorizontalAlignment="Stretch" Tapped="lsvKrypton_Tapped" />
+                    <ListViewItem  x:Name="lsvXenon" Width="Auto" Background="#C0FFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(54)  Xenon" HorizontalAlignment="Stretch" Tapped="lsvXenon_Tapped" />
+                    <ListViewItem  x:Name="lsvRadon" Width="Auto" Background="#C0FFFF" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(86)  Radon" HorizontalAlignment="Stretch" Tapped="lsvRadon_Tapped" />
+
+                </ListView>
+            </PivotItem>
+
+            <PivotItem Header="Unknown Properties |">
+                <!-- #E8E8E8-->
+
+                <ListView HorizontalAlignment="Stretch" Background="Gray " Grid.Column="0" Grid.Row="0">
+                    <ListViewItem  x:Name="lsvMeitnerium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1"  Content="(109)  Meitnerium" HorizontalAlignment="Stretch" Tapped="lsvMeitnerium_Tapped" />
+                    <ListViewItem  x:Name="lsvDarmstadium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(110)  Darmstadium" HorizontalAlignment="Stretch" Tapped="lsvDarmstadium_Tapped" />
+                    <ListViewItem  x:Name="lsvRoentgenium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(111)  Roentgenium" HorizontalAlignment="Stretch" Tapped="lsvRoentgenium_Tapped" />
+                    <ListViewItem  x:Name="lsvUnuntrium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(113)  Ununtrium" HorizontalAlignment="Stretch" Tapped="lsvUnuntrium_Tapped" />
+                    <ListViewItem  x:Name="lsvUnunpentium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(115)  Ununpentium" HorizontalAlignment="Stretch" Tapped="lsvUnunpentium_Tapped" />
+                    <ListViewItem  x:Name="lsvLivermorium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(116)  Livermorium" HorizontalAlignment="Stretch" Tapped="lsvLivermorium_Tapped" />
+                    <ListViewItem  x:Name="lsvUnunseptium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(117)  Ununseptium" HorizontalAlignment="Stretch" Tapped="lsvUnunseptium_Tapped" />
+                    <ListViewItem  x:Name="lsvUnunoctium" Width="Auto" Background="#E8E8E8" BorderBrush="WhiteSmoke" BorderThickness="1" Content="(118) Ununoctium" HorizontalAlignment="Stretch" Tapped="lsvUnunoctium_Tapped" />
+
+                </ListView>
+
+            </PivotItem>
+        </Pivot>
+
+        
+
+
+
+    </Grid>
+ 
+</Page>
