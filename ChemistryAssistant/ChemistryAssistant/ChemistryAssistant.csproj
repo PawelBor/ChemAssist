@@ -125,11 +125,16 @@
     <Compile Include="MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Note.cs" />
     <Compile Include="Model\Todo.cs" />
     <Compile Include="NotepadPage.xaml.cs">
       <DependentUpon>NotepadPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuickNotePage.xaml.cs">
+      <DependentUpon>QuickNotePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\NoteViewModel.cs" />
     <Compile Include="ViewModel\ReactionViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +151,7 @@
     <Content Include="Images\errorIMG.png" />
     <Content Include="Images\introIMG.png" />
     <Content Include="Images\notepad2IMG.png" />
+    <Content Include="Images\quickNotePage.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -189,6 +195,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="NotepadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuickNotePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

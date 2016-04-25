@@ -96,6 +96,10 @@ namespace ChemistryAssistant
             Frame.Navigate(typeof(ErrorCalculator));
         }
 
-        
+        private void SixthGrid_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            //quick note tapped
+            Frame.Navigate(typeof(QuickNotePage));
+        }
     }
 }

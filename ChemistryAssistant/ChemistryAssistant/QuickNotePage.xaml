@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="ChemistryAssistant.QuickNotePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ChemistryAssistant"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#E0EEEE">
+        <TextBlock x:Name="tbNote" Text="*Make Sure you're connected to the Internet." Visibility="Visible"></TextBlock>
+        <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Margin="20,20,20,20" Orientation="Vertical">
+                <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <ListView x:Name="Todos" Background="#F0F8FF">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel >
+                                    <TextBlock FontSize="25" Text="{Binding quickNote}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollViewer>
+
+                <StackPanel Height="15" Background="Silver" Width="auto"  Margin="0,50,0,25"  Name="root" xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'/>
+
+                <StackPanel Background="#F0F8FF" Margin="0,0,0,20">
+                    <TextBox x:Name="NewNoteTxtBox"  Margin="20,0,0,0"  FontSize="25" PlaceholderText="Note..." Header="Add New Quick Note:"/>
+                    <Button x:Name="InsertNoteBtn" HorizontalAlignment="Left" Click="InsertNoteBtn_Click" Content="Insert New Note" Margin="20,0,0,0"/>
+                </StackPanel>
+                <StackPanel Background="#F0F8FF"  Margin="0,20,0,0">
+                    <TextBox x:Name="IdTextBox" HorizontalAlignment="Left" Margin="20,0,0,0" FontSize="25" PlaceholderText="Note ID" Header="Delete Note by ID:" ></TextBox>
+                    <Button x:Name="IdTextBtn" HorizontalAlignment="Left" Content="Delete Note" Margin="20,0,0,0" Tapped="IdTextBtn_Tapped"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

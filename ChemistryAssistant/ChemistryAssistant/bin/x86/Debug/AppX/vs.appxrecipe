@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ab71e510-63e8-47d4-9bbe-51d33186376b</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\obj\x86\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>15C49BE0B4E718BBB75C1D2CC789243C795C886E724622A47819F2CACA3287F0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ab71e510-63e8-47d4-9bbe-51d33186376b_1.0.0.0_x86__mkwy4k6x939w8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ab71e510-63e8-47d4-9bbe-51d33186376b_mkwy4k6x939w8!App</RegisteredUserModeAppID>
@@ -19,16 +19,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-04-25T14:57:13.462</Modified>
+      <Modified>2016-04-25T19:23:02.530</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\ChemistryAssistant.exe">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\ChemistryAssistant.exe">
       <PackagePath>entrypoint\ChemistryAssistant.exe</PackagePath>
-      <Modified>2016-04-25T14:57:12.321</Modified>
+      <Modified>2016-04-25T19:22:59.940</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Pawel Borzym\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -462,7 +462,7 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-23T06:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\MySql.Data.RT.dll">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\MySql.Data.RT.dll">
       <PackagePath>MySql.Data.RT.dll</PackagePath>
       <Modified>2015-06-19T09:01:02.000</Modified>
     </AppxPackagedFile>
@@ -474,91 +474,95 @@
       <PackagePath>ucrtbased.dll</PackagePath>
       <Modified>2016-03-29T16:11:30.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-02-14T18:26:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\blue_flask_intro.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\blue_flask_intro.png">
       <PackagePath>Images\blue_flask_intro.png</PackagePath>
       <Modified>2016-02-14T19:00:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\dilutionIMG.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\dilutionIMG.png">
       <PackagePath>Images\dilutionIMG.png</PackagePath>
       <Modified>2016-04-23T15:35:35.761</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\elementsIMG.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\elementsIMG.png">
       <PackagePath>Images\elementsIMG.png</PackagePath>
       <Modified>2016-04-23T15:36:08.813</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\equationIMG.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\equationIMG.png">
       <PackagePath>Images\equationIMG.png</PackagePath>
       <Modified>2016-04-23T15:41:46.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\errorIMG.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\errorIMG.png">
       <PackagePath>Images\errorIMG.png</PackagePath>
       <Modified>2016-04-23T15:38:33.090</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\introIMG.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\introIMG.png">
       <PackagePath>Images\introIMG.png</PackagePath>
       <Modified>2016-04-23T14:16:54.202</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Images\notepad2IMG.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\notepad2IMG.png">
       <PackagePath>Images\notepad2IMG.png</PackagePath>
       <Modified>2016-04-23T15:46:11.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Images\quickNotePage.png">
+      <PackagePath>Images\quickNotePage.png</PackagePath>
+      <Modified>2016-04-25T19:17:32.461</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-11T05:09:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2016-02-14T18:25:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\ChemistryAssistant.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\ChemistryAssistant.xr.xml">
       <PackagePath>ChemistryAssistant.xr.xml</PackagePath>
-      <Modified>2016-04-24T15:23:28.801</Modified>
+      <Modified>2016-04-25T19:22:59.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2016-04-17T17:27:50.229</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-04-25T14:17:51.739</Modified>
+      <Modified>2016-04-25T19:23:01.347</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\Core\ChemistryAssistant.exe">
+    <AppxPackagedFile Include="C:\Users\Pawel Borzym\Desktop\final\ChemistryAssistant\ChemistryAssistant\bin\x86\Debug\Core\ChemistryAssistant.exe">
       <PackagePath>ChemistryAssistant.exe</PackagePath>
-      <Modified>2016-04-25T14:57:13.456</Modified>
+      <Modified>2016-04-25T19:23:02.522</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

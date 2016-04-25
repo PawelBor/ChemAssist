@@ -30,7 +30,7 @@ namespace ChemistryAssistant
         /// 
 
         public static ReactionViewModel REACTION_VIEW_MODEL = new ReactionViewModel();
-        public static IdViewModel ID_VIEW_MODEL = new IdViewModel();
+        public static NoteViewModel NOTE_VIEW_MODEL = new NoteViewModel();
 
         public App()
         {

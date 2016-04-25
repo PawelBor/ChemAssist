@@ -94,6 +94,9 @@
             <Image x:Name="FifthGrid" Source="Images/errorIMG.png" Height="180"  Width="160" Tapped="FifthGrid_Tapped" />
         </StackPanel>
 
+        <StackPanel Margin="0,5,5,5" Grid.Row="2" Grid.Column="1" BorderBrush="Black" BorderThickness="3">
+            <Image x:Name="SixthGrid" Source="Images/quickNotePage.png" Height="180"  Width="160" Tapped="SixthGrid_Tapped"  />
+        </StackPanel>
 
     </Grid>
 </Page>
